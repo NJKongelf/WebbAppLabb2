@@ -1,0 +1,66 @@
+.dice-and-highscore button {
+    border-radius: 15px;
+    width: 60px;
+    height:60px;
+
+}
+
+.dice_1 {
+  background-image: url("../img/1.svg");
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: center;
+    width: 40px;
+    height:40px;
+}
+.dice_2 {
+    background-image: url("../img/2.svg");
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: center;
+    width: 40px;
+    height:40px;
+}
+.dice_3 {
+    background-image: url("../img/3.svg");
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: center;
+    width: 40px;
+    height:40px;
+}
+.dice_4 {
+    background-image: url("../img/4.svg");
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: center;
+    width:40px;
+    height:40px;
+}
+.dice_5 {
+    background-image: url("../img/5.svg");
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: center;
+    width: 40px;
+    height:40px;
+}
+.dice_6 {
+    background-image: url("../img/6.svg");
+    background-repeat: no-repeat;
+    background-size: 80% 85%;
+    background-position: center;
+    width: 40px;
+    height:40px;
+}
+
+.dice_border {
+    border: 3px solid black;
+
+}
+
+#reroll_button {
+    border-radius: 5px;
+    width: 100px;
+    height:35px;
+}
