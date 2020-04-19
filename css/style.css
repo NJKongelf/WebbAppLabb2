@@ -1,0 +1,32 @@
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Yatzy_Score_card_with_dies.jpg/1024px-Yatzy_Score_card_with_dies.jpg");
+    background-size:60%;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-color: black;
+}
+section {
+    font-family: Roboto, Arial, serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.game {
+    background-color: navajowhite;
+    justify-self: center;
+    margin: 5px auto;
+    display: flex;
+    width: 30%;
+    height:auto;
+}
+
+.dice-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: 10px;
+}

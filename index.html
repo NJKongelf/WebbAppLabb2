@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy game NJ</title>
+    <link rel="icon" href="img/icon.svg" >
+    <link rel="stylesheet" type="text/css" href="css/dice.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <section>
+        <div class="game">
+                <div class="dice-container">
+                <div>
+                    <dices
+                            v-for="dice in dices"
+                            v-bind:key="dice.id"
+                            v-bind:value="dice.value"
+                            v-bind:is-selected="dice.isSelected"
+                            v-bind:class="{dice_border:dice.isSelected}"
+                            v-on:select="dice.isSelected=!dice.isSelected"
+                    ></dices>
+                    <br>
+                               <!-- todo: skapa function för om snurr här  -->
+                    <button id="reroll_button" v-on:click="reroll" v-if="this.rerolls < 3">Roll the dice</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
