@@ -1,10 +1,3 @@
-.dice-and-highscore button {
-    border-radius: 15px;
-    width: 60px;
-    height:60px;
-
-}
-
 .dice_1 {
   background-image: url("../img/1.svg");
     background-repeat: no-repeat;
@@ -59,8 +52,3 @@
 
 }
 
-#reroll_button {
-    border-radius: 5px;
-    width: 100px;
-    height:35px;
-}
