@@ -24,9 +24,28 @@ section {
 
 .dice-container {
     background-color: white;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 45%;
+    width: 12%;
     margin: 10px;
+}
+.scoreboard {
+    background-color: darkred;
+    justify-self: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.scoreboard div {
+    flex-wrap: wrap;
+    margin: 15px;
+    background-color: white;
+    height:auto;
+    width: content-box;
 }

@@ -10,9 +10,11 @@
 <body>
 <div id="app">
     <section>
-        <div class="game">
-                <div class="dice-container">
+            <div class="dice-container">
                 <div>
+                    <button  v-on:click="turnthedice" v-if="this.throwdice < 3">Roll the dice</button>
+                    <button  v-on:click="checkdices" v-if="this.roundsofGame < 12 ||this.throwdice < 3">Points?   </button>
+                    <br>
                     <dices
                             v-for="dice in dices"
                             v-bind:key="dice.id"
@@ -21,12 +23,28 @@
                             v-bind:class="{dice_border:dice.isSelected}"
                             v-on:select="dice.isSelected=!dice.isSelected"
                     ></dices>
-                    <br>
-                               <!-- todo: skapa function för om snurr här  -->
-                    <button id="reroll_button" v-on:click="reroll" v-if="this.rerolls < 3">Roll the dice</button>
+
+                    <p>Throw: {{throwdice}} of 3 times</p>
+                    <p>Round {{roundsofGame}} </p>
+
+                    <button  v-on:click="newGame" >New Game</button>
                 </div>
             </div>
-        </div>
+
+            <div class="scoreboard">
+                <div>
+                    <p>Point so far: {{totalpoint}} points</p>
+                </div>
+                <div class="recordkeeper">
+                    <ul>
+                        <li v-for="pointsRound in roundsPoint">
+                            {{pointsRound.value}}
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
     </section>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
